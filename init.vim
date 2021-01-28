@@ -13,31 +13,34 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
-Plug 'vim-scripts/phd'
-Plug 'Lokaltog/vim-powerline'
-Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'vim-scripts/phd'
+" Plug 'Lokaltog/vim-powerline'
+" Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'derekwyatt/vim-fswitch'
+" Plug 'kshenoy/vim-signature'
+" Plug 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
+" Plug 'majutsushi/tagbar'
+" Plug 'vim-scripts/indexer.tar.gz'
+" Plug 'vim-scripts/DfrankUtil'
+" Plug 'vim-scripts/vimprj'
+" Plug 'dyng/ctrlsf.vim'
+
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'derekwyatt/vim-fswitch'
-Plug 'kshenoy/vim-signature'
-Plug 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
-Plug 'majutsushi/tagbar'
-Plug 'vim-scripts/indexer.tar.gz'
-Plug 'vim-scripts/DfrankUtil'
-Plug 'vim-scripts/vimprj'
-Plug 'dyng/ctrlsf.vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'scrooloose/nerdcommenter'
-Plug 'vim-scripts/DrawIt'
-Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
-Plug 'derekwyatt/vim-protodef'
 Plug 'scrooloose/nerdtree'
-Plug 'fholgado/minibufexpl.vim'
-Plug 'gcmt/wildfire.vim'
-Plug 'sjl/gundo.vim'
+Plug 'SirVer/ultisnips'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'Lokaltog/vim-easymotion'
-Plug 'suan/vim-instant-markdown'
-Plug 'lilydjwg/fcitx.vim'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'neoclide/coc.nvim'
+
+" Plug 'scrooloose/nerdcommenter'
+" Plug 'vim-scripts/DrawIt'
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'suan/vim-instant-markdown'
+" Plug 'derekwyatt/vim-protodef'
+" Plug 'gcmt/wildfire.vim'
+" Plug 'sjl/gundo.vim'
+" Plug 'lilydjwg/fcitx.vim'
 
 call plug#end()
 
@@ -329,9 +332,9 @@ nmap <Leader>tp :tprevious<CR>
 
 " 基于语义的代码导航
 
-nnoremap <leader>jc :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
 " 只能是 #include 或已打开的文件
-nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 
 " <<
 
